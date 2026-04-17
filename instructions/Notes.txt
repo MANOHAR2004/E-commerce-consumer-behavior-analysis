@@ -1,0 +1,19 @@
+1. I downloaded dataset from kaggle 
+2. created comprehansive project structure -Ecommerce_Project/
+├── project_data/          → cleaned_CSV file here
+├── sql_queries/           → SQL scripts later
+├── python_scripts/        → Jupyter notebooks file
+├── excel/         → cleaned and uncleaned excel files
+├── powerbi/       → 
+└── README.txt     → 
+
+
+3. cleaning data in excel- uncleaned file - a) 8 columns(InvoiceNo,    StockCode,    Description,    Quantity,    InvoiceDate,    UnitPrice,    CustomerID    Country,)
+                                            b) 65536 rows initially before clining.
+                                            c) customerID - blank(25317)
+                                            d) order type - cancelled order(1084)
+                                            e) returned value(1192)
+
+4. created new columns in excel file -  a) customer type(=if(g2='','guest','registered')indicating blank rows in customerID as guest and other as registered)
+                                        b) order type (=IF(LEFT(A3,1) = "c","canceled","Normal") this column indicate invoice that has c in starting of invoice number as canceled order and otherr as normal)
+                                        c)quantity flage (=IF(D4<0,"returned","Sale") negetive quantity as returened and othe as sales)
