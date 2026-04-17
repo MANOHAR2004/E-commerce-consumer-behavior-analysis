@@ -1,0 +1,18 @@
+# Data files - too large for GitHub
+data/
+EXCEL/
+*.csv
+*.xlsx
+*.xls
+
+# Python auto-generated files
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
