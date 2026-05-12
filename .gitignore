@@ -16,3 +16,9 @@ Thumbs.db
 
 # VS Code settings
 .vscode/
+
+# Raw data files — too large for GitHub
+project_data/online_retail_II*.xlsx
+project_data/online_retail_II*.csv
+
+# Keep cleaned outputs and README
