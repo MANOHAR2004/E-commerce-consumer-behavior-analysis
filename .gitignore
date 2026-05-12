@@ -1,24 +1,15 @@
-# Data files - too large for GitHub
-data/
-EXCEL/
-*.csv
-*.xlsx
-*.xls
-
+# Raw data folder
+project_data/
+EXCEL/*.csv
+EXCEL/*.xlsx
+EXCEL/*.xls
+PYTHON_SCRIPTS/*.csv
 # Python auto-generated files
 __pycache__/
 .ipynb_checkpoints/
 *.pyc
-
 # System files
 .DS_Store
 Thumbs.db
-
 # VS Code settings
 .vscode/
-
-# Raw data files — too large for GitHub
-project_data/online_retail_II*.xlsx
-project_data/online_retail_II*.csv
-
-# Keep cleaned outputs and README
