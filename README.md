@@ -1,4 +1,4 @@
-# E-commerce-consumer-behavior-analysis
+# E-commerce-consumer-behavior-analysis 🎯
 This repository is for my project on the effect of e-commerce on consumer behavior.
 # E-Commerce Consumer Behavior Analysis
 
