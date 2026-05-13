@@ -1,4 +1,5 @@
 # E-commerce-consumer-behavior-analysis 🎯
+![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 This repository is for my project on the effect of e-commerce on consumer behavior.
 # E-Commerce Consumer Behavior Analysis
 
@@ -54,7 +55,7 @@ ecommerce-consumer-analysis/
 ## ✅ Progress Tracker
 
 ### Phase 1 — Data Setup & Cleaning
-- [x] Downloaded and explored raw dataset in Excel
+- [x] Downloaded and explored the raw dataset in Excel
 - [x] Created 3 engineered columns — Customer_Type, Order_Type, Quantity_Flag
 - [x] Fixed date formatting for MySQL compatibility
 - [x] Designed database schema and created transactions table in MySQL
@@ -119,21 +120,21 @@ ecommerce-consumer-analysis/
 
 🔄 **In Progress** — Phase 2 (SQL Analysis)
 
-Query 1- Number of unique registered customers?
+### Query 1- Number of unique registered customers?
 
 
 <img width="648" height="285" alt="Screenshot 2026-05-13 154849" src="https://github.com/user-attachments/assets/9a4f1171-711f-45ef-9f6c-52a42f0b27da" />
 
 
-Query2- Country with the most orders - (🥇The UK has the highest number of orders, possibly because the company is primarily active in its home country, while international orders are comparatively lower.)
+### Query2- Country with the most orders - (🥇The UK has the highest number of orders, possibly because the company is primarily active in its home country, while international orders are comparatively lower.)
 
 <img width="646" height="529" alt="Screenshot 2026-04-04 164734" src="https://github.com/user-attachments/assets/f3899c1a-1104-4b3c-8d45-04ff3027ab2c" />
 
-Query3- calculating total revenue(💷 excluding cancelation and returns)
+### Query3- calculating total revenue(💷 excluding cancelation and returns)
 
 <img width="977" height="452" alt="image" src="https://github.com/user-attachments/assets/e9a5f167-38c3-4c90-ab76-778612ce2a95" />
 
-Query5- Highest sales by month(🎄The 12th month has the highest sales volume, likely due to Christmas and the holiday season.)
+### Query5- Highest sales by month(🎄The 12th month has the highest sales volume, likely due to Christmas and the holiday season.)
 
 <img width="751" height="687" alt="image" src="https://github.com/user-attachments/assets/92cbe1ff-862e-4137-8242-6ce1a765a091" />
 
