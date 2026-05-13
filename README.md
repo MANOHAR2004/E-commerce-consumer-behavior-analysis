@@ -45,7 +45,7 @@ ecommerce-consumer-analysis/
 ├── data/              → Raw dataset (gitignored)
 ├── sql/               → SQL scripts and queries
 ├── python/            → Jupyter notebooks and visualisations
-├── excel/             → Excel reports and pivot analysis
+├── Excel/             → Excel reports and pivot analysis
 ├── powerbi/           → Power BI dashboard (.pbix)
 └── README.md          → Project documentation
 
@@ -63,10 +63,10 @@ ecommerce-consumer-analysis/
 
 ### Phase 2 — SQL Analysis
 - [x] Written 5 basic business queries
-- [x] Unique registered customers — 1,204
-- [x] Top country by orders — United Kingdom (93% of transactions)
-- [x] Total revenue (excl. returns & cancellations) — £1,330,402.58
-- [x] Top 10 best-selling products identified
+- [x] Unique registered customers — 5924
+- [x] Top country by orders — United Kingdom (963819 - 95% of transactions)
+- [x] Total revenue (excl. returns & cancellations) — £20295435.07
+- [x] Top 10 best-selling products identified ( like - 1, WORLD WAR 2 GLIDERS ASSTD DESIGNS. 2, WHITE HANGING HEART T-LIGHT HOLDER. 3, ASSORTED COLOUR BIRD ORNAMENT)
 - [x] Monthly revenue trends analysed
 - [ ] Intermediate queries — subqueries, CASE, DATE functions
 - [ ] Advanced queries — CTEs, Window Functions, RFM scoring
@@ -98,10 +98,10 @@ ecommerce-consumer-analysis/
 ## 🔍 Key Insights So Far
 
 - **38% guest checkout rate** — significant customer retention gap
-- **UK dominates** — 93% of all transactions are UK-based
-- **Top product anomaly** — Medium Ceramic Storage Jar shows unusually 
+- **UK dominates** — 95% of all transactions are UK-based
+- **Top product anomaly** — WORLD WAR 2 GLIDERS ASSTD DESIGNS
   high volume driven entirely by guest purchases
-- **Seasonal peak** — December shows highest revenue month
+- **Seasonal peak** — December shows highest revenue month(can be due to Christmas)
 
 ---
 
@@ -118,6 +118,48 @@ ecommerce-consumer-analysis/
 ## 🚀 Status
 
 🔄 **In Progress** — Phase 2 (SQL Analysis)
+
+#-- Query1- Number of unique registered customers?
+
+Select count(DISTINCT CustomerID) AS Unique_customer
+from transactions
+where Customer_Type = 'Registered';
+<img width="648" height="285" alt="Screenshot 2026-05-13 154849" src="https://github.com/user-attachments/assets/9a4f1171-711f-45ef-9f6c-52a42f0b27da" />
+
+
+# Query2- Country with the most orders - (🥇The UK has the highest number of orders, possibly because the company is primarily active in its home country, while international orders are comparatively lower.)
+
+Select Country, count(*) As total_orders
+from transactions 
+group by Country
+Order by total_orders desc
+limit 10;
+
+<img width="646" height="529" alt="Screenshot 2026-04-04 164734" src="https://github.com/user-attachments/assets/f3899c1a-1104-4b3c-8d45-04ff3027ab2c" />
+
+# Query3- calculating total revenue(💷 excluding cancelation and returns)
+
+SELECT ROUND(SUM(Quantity * UnitPrice), 2) AS Total_Revenue
+FROM transactions
+WHERE Order_Type = 'Normal'
+AND Quantity_Flag = 'Sale';
+
+<img width="977" height="452" alt="image" src="https://github.com/user-attachments/assets/e9a5f167-38c3-4c90-ab76-778612ce2a95" />
+
+#-- Query5- Highest sales by month(🎄The 12th month has the highest sales volume, likely due to Christmas and the holiday season.)
+
+SELECT 
+    MONTH(InvoiceDate) AS Month,
+    YEAR(InvoiceDate) AS Year,
+    ROUND(SUM(Quantity * UnitPrice), 2) AS Monthly_Revenue
+FROM transactions
+WHERE Order_Type = 'Normal'
+AND Quantity_Flag = 'Sale'
+GROUP BY Year, Month
+ORDER BY Year, Month;
+
+<img width="751" height="687" alt="image" src="https://github.com/user-attachments/assets/92cbe1ff-862e-4137-8242-6ce1a765a091" />
+
 
 ---
 
