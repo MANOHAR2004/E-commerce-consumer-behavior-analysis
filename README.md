@@ -119,44 +119,21 @@ ecommerce-consumer-analysis/
 
 🔄 **In Progress** — Phase 2 (SQL Analysis)
 
-#-- Query1- Number of unique registered customers?
+Query 1- Number of unique registered customers?
 
-Select count(DISTINCT CustomerID) AS Unique_customer
-from transactions
-where Customer_Type = 'Registered';
+
 <img width="648" height="285" alt="Screenshot 2026-05-13 154849" src="https://github.com/user-attachments/assets/9a4f1171-711f-45ef-9f6c-52a42f0b27da" />
 
 
-# Query2- Country with the most orders - (🥇The UK has the highest number of orders, possibly because the company is primarily active in its home country, while international orders are comparatively lower.)
-
-Select Country, count(*) As total_orders
-from transactions 
-group by Country
-Order by total_orders desc
-limit 10;
+Query2- Country with the most orders - (🥇The UK has the highest number of orders, possibly because the company is primarily active in its home country, while international orders are comparatively lower.)
 
 <img width="646" height="529" alt="Screenshot 2026-04-04 164734" src="https://github.com/user-attachments/assets/f3899c1a-1104-4b3c-8d45-04ff3027ab2c" />
 
 # Query3- calculating total revenue(💷 excluding cancelation and returns)
 
-SELECT ROUND(SUM(Quantity * UnitPrice), 2) AS Total_Revenue
-FROM transactions
-WHERE Order_Type = 'Normal'
-AND Quantity_Flag = 'Sale';
-
 <img width="977" height="452" alt="image" src="https://github.com/user-attachments/assets/e9a5f167-38c3-4c90-ab76-778612ce2a95" />
 
-#-- Query5- Highest sales by month(🎄The 12th month has the highest sales volume, likely due to Christmas and the holiday season.)
-
-SELECT 
-    MONTH(InvoiceDate) AS Month,
-    YEAR(InvoiceDate) AS Year,
-    ROUND(SUM(Quantity * UnitPrice), 2) AS Monthly_Revenue
-FROM transactions
-WHERE Order_Type = 'Normal'
-AND Quantity_Flag = 'Sale'
-GROUP BY Year, Month
-ORDER BY Year, Month;
+Query5- Highest sales by month(🎄The 12th month has the highest sales volume, likely due to Christmas and the holiday season.)
 
 <img width="751" height="687" alt="image" src="https://github.com/user-attachments/assets/92cbe1ff-862e-4137-8242-6ce1a765a091" />
 
