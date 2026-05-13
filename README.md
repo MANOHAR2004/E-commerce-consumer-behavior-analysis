@@ -129,7 +129,7 @@ Query2- Country with the most orders - (🥇The UK has the highest number of ord
 
 <img width="646" height="529" alt="Screenshot 2026-04-04 164734" src="https://github.com/user-attachments/assets/f3899c1a-1104-4b3c-8d45-04ff3027ab2c" />
 
-# Query3- calculating total revenue(💷 excluding cancelation and returns)
+Query3- calculating total revenue(💷 excluding cancelation and returns)
 
 <img width="977" height="452" alt="image" src="https://github.com/user-attachments/assets/e9a5f167-38c3-4c90-ab76-778612ce2a95" />
 
