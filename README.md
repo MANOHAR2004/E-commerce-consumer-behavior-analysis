@@ -1,5 +1,5 @@
 # E-commerce-consumer-behavior-analysis 🎯
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+
 This repository is for my project on the effect of e-commerce on consumer behavior.
 # E-Commerce Consumer Behavior Analysis
 
@@ -19,6 +19,7 @@ that can drive retention and revenue growth.
 ---
 
 ## 📦 Dataset
+![Dataset](https://img.shields.io/badge/Dataset-1M%2B%20Rows-green)
 
 - **Source:** Online Retail II — UCI Machine Learning Repository (Kaggle)
 - **Size:** 1M+ transactions
@@ -30,6 +31,7 @@ that can drive retention and revenue growth.
 ---
 
 ## 🛠️ Tools Used
+![Tools](https://img.shields.io/badge/Tools-MySQL%20%7C%20Python%20%7C%20PowerBI-blue)
 
 | Tool | Purpose |
 |---|---|
@@ -52,7 +54,8 @@ ecommerce-consumer-analysis/
 
 ---
 
-## ✅ Progress Tracker
+## ✅ Progress Tracker 
+![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
 ### Phase 1 — Data Setup & Cleaning
 - [x] Downloaded and explored the raw dataset in Excel
