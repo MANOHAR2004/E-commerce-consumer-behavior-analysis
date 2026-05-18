@@ -138,7 +138,10 @@ ecommerce-consumer-analysis/
 <img width="977" height="452" alt="image" src="https://github.com/user-attachments/assets/e9a5f167-38c3-4c90-ab76-778612ce2a95" />
 
 ### Query5- Highest sales by month(🎄The 12th month has the highest sales volume, likely due to Christmas and the holiday season.)
-
+Business Insight from This Query - 
+1. Q4 (Oct, Nov, Dec) consistently the highest — seasonal peak
+2. February lowest — £553,339 — post-Christmas slowdown
+3. September starts the climb — £924,333 jumping to £1.1M in October
 <img width="829" height="719" alt="image" src="https://github.com/user-attachments/assets/5737734a-d822-431c-a18e-bcb6ea11235a" />
 
 
