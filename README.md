@@ -139,7 +139,8 @@ ecommerce-consumer-analysis/
 
 ### Query5- Highest sales by month(🎄The 12th month has the highest sales volume, likely due to Christmas and the holiday season.)
 
-<img width="751" height="687" alt="image" src="https://github.com/user-attachments/assets/92cbe1ff-862e-4137-8242-6ce1a765a091" />
+<<img width="770" height="753" alt="image" src="https://github.com/user-attachments/assets/9dd8ebf1-a711-4411-af5a-24496f733cdc" />
+>
 
 
 ---
